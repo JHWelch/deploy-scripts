@@ -3,6 +3,10 @@ AVAILABLE_SITES="choremanager, jordanwelch.com"
 site=$1
 dir_path="$(dirname $(realpath $0))"
 
+echo "Updating dploy-scripts"
+cd $dir_path
+git pull
+
 case $site in 
     "choremanager") 
         echo "Deploying ChoreManager"
