@@ -1,17 +1,16 @@
 #!/bin/bash
 AVAILABLE_SITES="choremanager, jordanwelch.com"
-SITE=$1
+site=$1
+dir_oath="$(dirname $(realpath $0))"
 
-echo $SITE
-
-case $SITE in 
+case $site in 
     "choremanager") 
         echo "Deploying ChoreManager"
-        source ./ChoreManager/dploy.sh
+        source $dir_oath/ChoreManager/dploy.sh
         ;;
     "jordanwelch.com") 
         echo "Deploying jordanwelch.com"
-        source ./jordanwelch.com/dploy.sh
+        source $dir_oath/jordanwelch.com/dploy.sh
         ;;
     *)
         echo "usage: dploy.sh site"
