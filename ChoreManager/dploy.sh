@@ -9,9 +9,15 @@ deploy_path="$(source $dir_path/../common/atomic-git-pull.sh $BASE_DIR git@githu
 cd $deploy_path
 
 echo "-------------------------"
-echo "Copying .env from current"
+echo "Link .env"
 echo "-------------------------"
-cp ../../current/.env .
+ln -sf $BASE_DIR/.env .
+
+echo "-------------------------"
+echo "Link storage folder"
+echo "-------------------------"
+rm -rf ./storage
+ln -sfn $BASE_DIR/storage ./storage
 
 echo "---------------------------------"
 echo "Installing composer dependencies."
