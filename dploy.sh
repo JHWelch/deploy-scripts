@@ -7,14 +7,14 @@ echo "Updating dploy-scripts"
 cd $dir_path
 git pull
 
-case $site in 
-    "choremanager") 
+case $site in
+    "choremanager")
         echo "Deploying ChoreManager"
-        source $dir_path/ChoreManager/dploy.sh
+        /bin/bash $dir_path/ChoreManager/dploy.sh
         ;;
-    "jordanwelch.com") 
+    "jordanwelch.com")
         echo "Deploying jordanwelch.com"
-        source $dir_path/jordanwelch.com/dploy.sh
+        /bin/bash $dir_path/jordanwelch.com/dploy.sh
         ;;
     *)
         echo "usage: dploy.sh site"
