@@ -1,5 +1,5 @@
 export PATH="/home/dploy/.nvm/versions/node/v14.16.0/bin/:$PATH"
-BASE_DIR="/var/www/ChoreManager/"
+BASE_DIR="/var/www/choremanager/"
 
 echo "-------------------------------------"
 echo "Pulling repository into new directory"
