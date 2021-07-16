@@ -1,6 +1,6 @@
 # Dploy scripts
 
-Custom deployment scripts for Jordan Welch's sites. Triggered by GitHub Actions workflows.
+Custom deployment scripts for Jordan Welch's sites. Triggered by GitHub Actions workflows. Uses a simple atomic deployment style.
 
 ## Usage
 `dploy.sh [site]` - Run the deploy script for a given site
