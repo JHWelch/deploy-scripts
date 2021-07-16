@@ -13,16 +13,17 @@ echo "Link .env"
 echo "-------------------------"
 ln -sf $BASE_DIR/.env .
 
+echo "---------------------------------"
+echo "Installing composer dependencies."
+echo "---------------------------------"
+composer install --no-dev
+
 echo "-------------------------"
 echo "Link storage folder"
 echo "-------------------------"
 rm -rf ./storage
 ln -sfn $BASE_DIR/storage ./storage
-
-echo "---------------------------------"
-echo "Installing composer dependencies."
-echo "---------------------------------"
-composer install --no-dev
+php artisan storage:link
 
 echo "-------------------"
 echo "Migrating database."
