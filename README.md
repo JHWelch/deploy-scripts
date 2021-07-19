@@ -1,9 +1,9 @@
-# Dploy scripts
+# Deploy scripts
 
 Custom deployment scripts for Jordan Welch's sites. Triggered by GitHub Actions workflows. Uses a simple atomic deployment style.
 
 ## Usage
-`dploy.sh [site]` - Run the deploy script for a given site
+`deploy.sh [site]` - Run the deploy script for a given site
 
 ### Available sites
 - [choremanager](https://github.com/JHWelch/ChoreManager)
