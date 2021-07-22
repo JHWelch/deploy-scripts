@@ -10,7 +10,7 @@ git pull
 echo "-------------------------------"
 echo "Installing bundle dependencies."
 echo "-------------------------------"
-gem install
+bundle install
 
 echo "----------------------------"
 echo "Installing npm dependencies."
